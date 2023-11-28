@@ -39,14 +39,11 @@ namespace mekdi_kawe
                 {
                     if (dr.Read())
                     {
-                        // Mendapatkan nilai kolom 'level'
                         string level = dr["level"].ToString();
 
                         if (level.Equals("admin", StringComparison.OrdinalIgnoreCase))
                         {
-                            // Jika tingkat adalah 'admin', tampilkan lobby
                             new lobby().Show();
-                            // Ambil username pengguna
                             FileStream fs = new FileStream("nama.txt", FileMode.Create);
                             BinaryFormatter bf = new BinaryFormatter();
                             bf.Serialize(fs, level);
@@ -54,9 +51,7 @@ namespace mekdi_kawe
                         }
                         else
                         {
-                            // Jika tingkat bukan 'admin', tampilkan Form1
                             new Form1().Show();
-                            // Ambil username pengguna
                             FileStream fs = new FileStream("nama.txt", FileMode.Create);
                             BinaryFormatter bf = new BinaryFormatter();
                             bf.Serialize(fs, level);

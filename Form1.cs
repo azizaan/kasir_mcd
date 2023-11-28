@@ -209,7 +209,6 @@ namespace mekdi_kawe
 
             if (userLevel == "admin")
             {
-                // Jika level pengguna adalah admin, buka form lobby
                 lobby lobbyForm = new lobby();
                 lobbyForm.Show();
                 this.Hide();
@@ -230,13 +229,11 @@ namespace mekdi_kawe
 
         private string GetUserLevel()
         {
-            // Gantilah dengan implementasi yang sesuai untuk membaca nama pengguna dari file "nama.txt"
             FileStream fs = new FileStream("nama.txt", FileMode.Open);
             BinaryFormatter bf = new BinaryFormatter();
             string nama = (string)bf.Deserialize(fs);
             fs.Close();
 
-            // Gantilah dengan logika sesuai kebutuhan Anda
             if (nama == "admin")
             {
                 return "admin";
@@ -308,10 +305,8 @@ namespace mekdi_kawe
                     {
                         if (customerPayment >= paymentAmount)
                         {
-                            // Payment successful
                             double change = customerPayment - paymentAmount;
 
-                            // Append neatly formatted payment details to ReceiptTb
                             ReceiptTb.AppendText($"{"\t  Payment Amount:",-20}\t\tRp{customerPayment:N0}\n");
                             ReceiptTb.AppendText($"{"\t  Change:",-20}\t\tRp{change:N0}\n");
 

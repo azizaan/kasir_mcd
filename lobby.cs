@@ -21,10 +21,8 @@ namespace mekdi_kawe
         {
             harga hargaForm = new harga();
 
-            // Menampilkan form harga
             hargaForm.Show();
 
-            // Menutup form lobby (jika perlu)
             this.Hide();
         }
 
@@ -32,10 +30,8 @@ namespace mekdi_kawe
         {
             Form1 kasirForm = new Form1();
 
-            // Menampilkan form harga
             kasirForm.Show();
 
-            // Menutup form lobby (jika perlu)
             this.Hide();
         }
 

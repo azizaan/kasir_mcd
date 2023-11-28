@@ -8,7 +8,7 @@ Selamat datang di proyek "Kasir MCD kawe super"! Proyek ini adalah aplikasi kasi
 - **Pemesanan**: Lakukan pemesanan dengan cepat dan akurat menggunakan antarmuka pengguna yang ramah.
 - **Pembayaran**: Proses pembayaran pesanan dengan berbagai metode pembayaran yang telah disediakan.
 
-## Cara Menggunakan (bagi yang ingin melihat codenya)
+## Cara Menggunakan (bagi developer)
 
 1. **Instalasi**: Clone repositori ini ke komputer Anda dan pastikan memiliki dependensi yang diperlukan.
 2. **Konfigurasi**: Sesuaikan pengaturan dan database, sesuai dengan pembelajaran C# Anda.

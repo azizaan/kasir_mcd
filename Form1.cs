@@ -20,6 +20,19 @@ namespace mekdi_kawe
         public Form1()
         {
             InitializeComponent();
+            
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            Datelbl.Text = DateTime.Now.ToLongTimeString();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            Datelbl.Text = DateTime.Now.ToLongTimeString();
+            timer1.Start();
             FileStream fs = new FileStream("nama.txt", FileMode.Open);
             BinaryFormatter bf = new BinaryFormatter();
             string userLevel = (string)bf.Deserialize(fs);
@@ -33,19 +46,6 @@ namespace mekdi_kawe
             {
                 close.Text = "Logout";
             }
-
-        }
-
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            Datelbl.Text = DateTime.Now.ToLongTimeString();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            Datelbl.Text = DateTime.Now.ToLongTimeString();
-            timer1.Start();
-
         }
 
         private void FriesCb_CheckedChanged(object sender, EventArgs e)

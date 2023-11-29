@@ -10,7 +10,7 @@ Selamat datang di proyek "Kasir MCD kawe super"! Proyek ini adalah aplikasi kasi
 
 ## Cara Menggunakan (bagi developer)
 
-1. **Instalasi**: Clone repositori ini ke komputer Anda dan pastikan memiliki dependensi yang diperlukan.
+1. **Instalasi**: Clone repositori ini ke komputer Anda lalu klik 2 kali pada file yang bernama kasir_MCD.sln untuk menampilkan desaign aplikasi dan pastikan memiliki dependensi yang diperlukan seperti MySql.Data yang dapat kalian install pada section tools->nuGet package manager->search MySql.Data dan install package itu.
 2. **Konfigurasi**: Sesuaikan pengaturan dan database, sesuai dengan pembelajaran C# Anda.
 3. **Jalankan Aplikasi**: Buka aplikasi kasir untuk mencoba mengelola pesanan dan transaksi.
 

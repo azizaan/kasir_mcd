@@ -20,6 +20,19 @@ Selamat datang di proyek "Kasir MCD kawe super"! Proyek ini adalah aplikasi kasi
 2. **Konfigurasi**: buat database mysql menggunakan xampp/lampp dengan nama "mcd_kw" dan dump file yang sudah disediakan di folder database
 3. **Jalankan Aplikasi**: Buka aplikasi kasir untuk mencoba mengelola pesanan dan transaksi.
 
+### Bagian Login (Penting)
+
+Sebelum dapat menggunakan fitur pemesanan dan manajemen transaksi, Anda perlu melakukan login dengan akun yang sesuai. Gunakan informasi login berikut:
+
+- **Admin Login**
+  - **Username**: admin
+  - **Password**: admin
+
+- **Kasir Login**
+  - **Username**: kasir
+  - **Password**: kasir
+
+
 ## Kontribusi
 
 Jika Anda ingin berkontribusi pada pengembangan proyek ini, kami sangat menghargai sumbangan Anda. Silakan buat *fork* dari repositori ini, lakukan perubahan yang diperlukan, dan buat *pull request*.

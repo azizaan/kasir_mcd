@@ -131,5 +131,25 @@ namespace mekdi_kawe
                 MessageBox.Show("Update Gagal. Error: " + ex.Message);
             }
         }
+
+        private void btnupdatedessert_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                koneksi.conn.Open();
+                String Queri = "UPDATE drinks_dessert SET `harga`='" + txtdessert.Text + "' WHERE  `id`='" + id + "'";
+                cmd = new MySqlCommand(Queri, koneksi.conn);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Berhasil Update harga");
+                koneksi.conn.Close();
+
+                Tampil2();
+                Clear();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Update Gagal. Error: " + ex.Message);
+            }
         }
+    }
     }

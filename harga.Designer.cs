@@ -139,6 +139,7 @@
             this.btnupdatedessert.TabIndex = 17;
             this.btnupdatedessert.Text = "Update Harga";
             this.btnupdatedessert.UseVisualStyleBackColor = false;
+            this.btnupdatedessert.Click += new System.EventHandler(this.btnupdatedessert_Click);
             // 
             // txtdessert
             // 
